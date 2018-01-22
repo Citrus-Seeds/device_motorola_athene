@@ -39,3 +39,7 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
        PRODUCT_NAME="Moto G4/Plus"
+
+# Inherit Citrus-CAF revision specific stuffs.
+
+$(call inherit-product, vendor/citrus/config/common_la.um.mk)
