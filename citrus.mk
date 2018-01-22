@@ -1,5 +1,6 @@
 # Copyright (C) 2015 The CyanogenMod Project
 #           (C) 2017 The LineageOS Project
+#           (C) 2017 The Citrus-CAF Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common LineageOS stuff.
+# Inherit some common Citrus-CAF stuff.
 
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/citrus/common.mk)
 
 $(call inherit-product, device/motorola/athene/full_athene.mk)
 
@@ -28,7 +29,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 ## Device identifier. This must come after all inclusions
 
 PRODUCT_DEVICE := athene
-PRODUCT_NAME := lineage_athene
+PRODUCT_NAME := citrus_athene
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := athene
